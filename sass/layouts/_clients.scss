@@ -1,0 +1,38 @@
+/* ------------------CLIENTS ----------------*/
+
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients-list__item {
+  width: calc((100% - 150px) / 6);
+  height: 90px;
+}
+
+.clients-list__link {
+  @include flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--clients-icon-color);
+  border-radius: 4px;
+  justify-content: center;
+  transition-property: border-color;
+  @include transition;
+
+    &:hover, &:focus {
+      border-color: var(--accent-color);
+    }
+}
+
+.clients-list__icon {
+  fill: var(--clients-icon-color);
+  transition-property: fill;
+  @include transition;
+
+  .clients-list__link:hover  & ,
+  .clients-list__link:focus  & {
+    fill: var(--accent-color);
+}
+}
+

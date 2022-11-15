@@ -1,0 +1,31 @@
+
+
+.section.section-offer {
+  padding-top: 0px;
+}
+
+.list.offer-items {
+  display: flex;
+  gap: 30px;
+}
+
+.offer-img {
+  position: relative;
+  width: calc((100% - 60px) / 3);
+}
+
+.offer-img-title {
+  position: absolute;
+
+  width: 100%;
+  bottom: 0;
+  padding: 27px;
+
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  background: rgba(47, 48, 58, 0.8);
+  color: var(--white-color);
+}
