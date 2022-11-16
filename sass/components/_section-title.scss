@@ -1,8 +1,15 @@
 .section-title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
+
+  @media screen and (min-width: 480px) {
+  margin-bottom: 30px;
+  font-size: 28px; 
+  }
+  @media screen and (min-width: 1200px) {
+  margin-bottom: 50px;
+  font-size: 36px;
+  }
 }

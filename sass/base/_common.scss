@@ -10,7 +10,31 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+  max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  }
+}
+
+.section.no-padding {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 
