@@ -20,13 +20,26 @@
 
   <body>
     <!--Шапка сторінки-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="header__nav">
           <a class="logo link" href="./index.html"
             ><span class="logo-accent">Web</span>Studio</a
           >
-          <ul class="site-nav list">
+          <button type="button" class="menu-button is-open" data-menu-button>
+            <svg 
+            width="40px" 
+            height="40px"
+            aria-controls="menu-container"
+            aria-expanded="false"
+            area-label="Перемикач мобільного меню"
+            >
+              <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+              <use class="icon-menu" href="images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="menu-container is-open" id="menu-container" data-menu> Menu
+              <ul class="site-nav list">
             <li class="site-nav__item">
               <a class="site-nav__link current link" href="./index.html">Студія</a>
             </li>
@@ -56,8 +69,9 @@
             </a>
           </li>
         </ul>
+          </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- Блок Hero-->
@@ -116,7 +130,7 @@
       </section>
 
       <!--Діяльність компанії-->
-      <!-- <section class="section section-offer is-hidden">
+      <section class="section section-offer">
         <div class="container">
           <h2 class="section-title">Чим ми займаємось</h2>
           <ul class="list offer-items">
@@ -146,7 +160,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Команда-->
       <section class="section team-members">
         <div class="container">
@@ -154,13 +168,34 @@
           <ul class="team-list list">
             <li class="team-list-image">
               <div class="team-card">
-                <div class="team-card-img">
+                              <picture>
+                <source
+                  srcset="
+                    ./images/img.jpg 1x, 
+                    ./images/img2x.jpg 2x"
+
+                    media="min-width: 1200px"
+                    >
+                <source
+                  srcset="
+                    ./images/img-tab1x.jpg 1x, 
+                    ./images/img-tab-2x.jpg 2x"
+
+                    media="min-width: 768px"
+                    >
+                <source
+                  srcset="
+                    ./images/img-mob1x.jpg 1x, 
+                    ./images/img-mob-2x.jpg 2x"
+
+                    media="min-width: 320px"
+                    >
                   <img
-                    src="./images/img.jpg"
+                    src="./images/img-mob1x.jpg"
                     alt="Ігор Дем'яненко"
-                    width="270"
+                    width="450"
                   />
-                </div>
+              </picture>
                 <div class="team-card-text">
                   <h3 class="team-name">Ігор Дем'яненко</h3>
                   <p class="team-member-position">Product Designer</p>
@@ -202,13 +237,34 @@
 
             <li class="team-list-image">
               <div class="team-card">
-                <div class="team-card-img">
+                <picture>
+                  <source
+                  srcset="
+                    ./images/img-2.jpg 1x, 
+                    ./images/img2-2x.jpg 2x"
+
+                    media="min-width: 1200px"
+                    >
+                <source
+                  srcset="
+                    ./images/img2-tab-1x.jpg 1x, 
+                    ./images/img2-tab-2x.jpg 2x"
+
+                    media="min-width: 768px"
+                    >
+                <source
+                  srcset="
+                    ./images/img2-mob-1x.jpg 1x, 
+                    ./images/img2-mob-2x.jpg 2x"
+
+                    media="min-width: 320px"
+                    >
                   <img
-                    src="./images/img-2.jpg"
+                    src="./images/img2-mob-1x.jpg"
                     alt="Ольга Рєпіна"
-                    width="270"
+                    width="450"
                   />
-                </div>
+              </picture>
                 <div class="team-card-text">
                   <h3 class="team-name">Ольга Рєпіна</h3>
                   <p class="team-member-position">Frontend Developer</p>
@@ -250,13 +306,34 @@
 
             <li class="team-list-image">
               <div class="team-card">
-                <div class="team-card-img">
+                <picture>
+                  <source
+                  srcset="
+                    ./images/img-3.jpg 1x, 
+                    ./images/img3-2x.jpg 2x"
+
+                    media="min-width: 1200px"
+                    >
+                <source
+                  srcset="
+                    ./images/img3-tab-1x.jpg 1x, 
+                    ./images/img3-tab-2x.jpg 2x"
+
+                    media="min-width: 768px"
+                    >
+                <source
+                  srcset="
+                    ./images/img3-mob-1x.jpg 1x, 
+                    ./images/img3-mob-2x.jpg 2x"
+
+                    media="min-width: 320px"
+                    >
                   <img
-                    src="./images/img-3.jpg"
+                    src="./images/img3-mob-1x.jpg"
                     alt="Микола Тарасов"
-                    width="270"
+                    width="450"
                   />
-                </div>
+              </picture>
                 <div class="team-card-text">
                   <h3 class="team-name">Микола Тарасов</h3>
                   <p class="team-member-position">Marketing</p>
@@ -298,13 +375,34 @@
 
             <li class="team-list-image">
               <div class="team-card">
-                <div class="team-card-img">
+                <picture>
+                  <source
+                  srcset="
+                    ./images/img-4.jpg 1x, 
+                    ./images/img4-2x.jpg 2x"
+
+                    media="min-width: 1200px"
+                    >
+                <source
+                  srcset="
+                    ./images/img4-tab-1x.jpg 1x, 
+                    ./images/img4-tab-2x.jpg 2x"
+
+                    media="min-width: 768px"
+                    >
+                <source
+                  srcset="
+                    ./images/img4-mob-1x.jpg 1x, 
+                    ./images/img4-mob-2x.jpg 2x"
+
+                    media="min-width: 320px"
+                    >
                   <img
-                    src="./images/img-4.jpg"
+                    src="./images/img4-mob-1x.jpg"
                     alt="Михайло Єрмаков"
-                    width="270"
+                    width="450"
                   />
-                </div>
+              </picture>
                 <div class="team-card-text">
                   <h3 class="team-name">Михайло Єрмаков</h3>
                   <p class="team-member-position">UI Designer</p>
@@ -567,5 +665,7 @@
       </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu-button.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

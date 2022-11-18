@@ -8,21 +8,44 @@
   margin: auto;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(
-  to right,
-  rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)
-  ),
-  url(../images/Hero.jpg);
+  background-image:  
+  var(--hero-gradient) ,
+  url(../images/Hero-mob.jpg);
 
-  @media screen and (min-width: 768px) {
+  @include retina {
+    background-image:  
+  var(--hero-gradient) ,
+  url(../images/Hero-mob2x.jpg);
+}
+
+  @include tablet {
     width: 768px;
     height: 400px;
+
+  background-image: 
+  var(--hero-gradient) ,
+  url(../images/Hero-tab.jpg);
+
+  @include retina {
+    background-image:  
+  var(--hero-gradient) ,
+  url(../images/Hero-tab2x.jpg);
+}
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 1600px;
     height: 600px;
     padding: 200px 0;
+
+    background-image: 
+    var(--hero-gradient) ,
+  url(../images/Hero.jpg);
+
+  @include retina {
+    background-image:  
+  var(--hero-gradient) ,
+  url(../images/Hero2x.jpg);
+}
   }
 
   .button {
@@ -60,10 +83,10 @@
 
   color: var(--white-color);
   
-    @media screen and (min-width: 768px) {
+    @include tablet {
     width: 360px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 696px;
   font-size: 44px;
   line-height: 1.4;
