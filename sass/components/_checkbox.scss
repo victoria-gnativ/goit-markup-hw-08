@@ -54,3 +54,16 @@
   line-height: 1.8;
   letter-spacing: 0.06em;
 }
+
+.checkbox__text {
+
+font-size: 12px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+
+@include desktop {
+  font-size: 14px;
+line-height: 1.7;
+}
+
+}

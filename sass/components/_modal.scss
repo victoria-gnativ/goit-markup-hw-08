@@ -22,10 +22,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
 
   background-color: var(--white-color);
+
+
+  @include desktop {
+     min-width: 528px;
+  min-height: 581px;
+  }
 }
 
 .modal__button {
