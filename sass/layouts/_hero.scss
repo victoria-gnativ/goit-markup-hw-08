@@ -1,8 +1,7 @@
 /* -------------HERO------------- */
 .hero {
-  width: 480px;
+  max-width: 480px;
   height: 400px;
-  // max-width: 1600px;
   text-align: center;
   padding: 118px 0;
   margin: auto;
@@ -19,7 +18,7 @@
 }
 
   @include tablet {
-    width: 768px;
+    max-width: 768px;
     height: 400px;
 
   background-image: 
@@ -33,7 +32,7 @@
 }
   }
   @include desktop {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding: 200px 0;
 
