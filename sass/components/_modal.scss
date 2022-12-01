@@ -22,14 +22,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  min-width: 450px;
+  min-width: 95%;
   min-height: 609px;
 
   background-color: var(--white-color);
 
+  @include mobile {
+   min-width: 450px;
+  }
+
 
   @include desktop {
-     min-width: 528px;
+    min-width: 528px;
   min-height: 581px;
   }
 }

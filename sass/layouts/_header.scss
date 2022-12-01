@@ -91,11 +91,12 @@
   right: 0;
   background: var(--accent-color);
   border-radius: 2px;
-
-  @include desktop {
-    bottom: -2px;
-  }
 }
+  }
+    @include desktop {
+    &::after {
+    bottom: 0;
+    }
   }
 }
 
@@ -275,13 +276,17 @@ color: #757575;
 }
 
 .mob-contacts__link.tel {
-  font-weight: 500;
-font-size: 34px;
+font-weight: 500;
+font-size: 31px;
 line-height: 1.2;
 
 letter-spacing: 0.02em;
 
 color: var(--accent-color);
+
+@include mobile {
+  font-size: 34px;
+}
 }
 
 

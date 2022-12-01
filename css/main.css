@@ -165,9 +165,14 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  min-width: 450px;
+  min-width: 95%;
   min-height: 609px;
   background-color: var(--white-color);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -442,9 +447,9 @@ img {
     border-radius: 2px;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .current::after {
-    bottom: -2px;
+    bottom: 0;
   }
 }
 
@@ -608,10 +613,15 @@ img {
 
 .mob-contacts__link.tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 31px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-contacts__link.tel {
+    font-size: 34px;
+  }
 }
 
 .mob-soc {
@@ -650,6 +660,7 @@ img {
   margin: auto;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-image: var(--hero-gradient), url(../images/Hero-mob.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
